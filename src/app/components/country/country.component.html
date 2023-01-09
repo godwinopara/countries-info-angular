@@ -1,0 +1,12 @@
+<li>
+    <div class="country">
+        <div class="country-flag" [ngStyle]="{'backgroundImage': 'url(' + country.flag.svg + ')'}"></div>
+        <div class="country-details">
+            <h2>{{country.name.common}}</h2>
+            <p><span>Population: </span>{{country.population}}</p>
+            <p><span>Region: </span>{{country.region}}</p>
+            <p><span>Capital: </span>{{country.capital}}</p>
+        </div>
+    </div>
+</li>
+
