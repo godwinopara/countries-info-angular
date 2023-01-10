@@ -1,1 +1,26 @@
-<p>country-details works!</p>
+<section class="country-details-container">
+    <a href="/">
+        Back
+    </a>
+    <div class="wrapper">
+        <div class="image-wrapper">
+            <img src={{countryDetails.flags.svg}} alt="">
+        </div>
+        <div class="details-wrapper">
+            <h1>{{countryDetails.name.common}}</h1>
+            <div class="details">
+                <div class="left">
+                    <p><span>Native Name: </span>{{countryDetails.name.official}}</p>
+                    <p><span>Population: </span>{{countryDetails.population}}</p>
+                    <p><span>Region: </span>{{countryDetails.region}}</p>
+                  
+                </div>
+                <div class="right">
+                    <p><span>Sub Region: </span>{{countryDetails.subregion}}</p>
+                    <p><span>Capital: </span>{{countryDetails.capital}}</p>
+                    <p><span>Continent: </span>{{countryDetails.continents}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -9,17 +9,16 @@ import { CountriesDataService } from 'src/app/services/countries-data/countries-
 
 export class HomeComponent {
 
-  countriesData = this.CountriesDataService.getTestCountriesData();
+  countriesData = [];
   
 
   constructor(private CountriesDataService: CountriesDataService){
   }
 
   ngOnInit(){
-    // this.CountriesDataService.getAllCountries().subscribe((data) => {
-    //   this.countriesData = data
-    //   console.log(this.countriesData)
-    // })
+    this.CountriesDataService.getAllCountries().subscribe((data) => {
+      this.countriesData = data
       console.log(this.countriesData)
+    })
   }
 }

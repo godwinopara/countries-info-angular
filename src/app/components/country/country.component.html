@@ -1,12 +1,11 @@
-<li>
-    <div class="country">
-        <div class="country-flag" [ngStyle]="{'backgroundImage': 'url(' + country.flag.svg + ')'}"></div>
-        <div class="country-details">
-            <h2>{{country.name.common}}</h2>
-            <p><span>Population: </span>{{country.population}}</p>
-            <p><span>Region: </span>{{country.region}}</p>
-            <p><span>Capital: </span>{{country.capital}}</p>
+<li routerLink="/country/{{country.cca2}}">
+        <div class="country">
+            <div class="country-flag" [ngStyle]="{'backgroundImage': 'url(' + country.flags.svg + ')'}"></div>
+            <div class="country-details">
+                <h2>{{country.name.common}}</h2>
+                <p><span>Population: </span>{{country.population}}</p>
+                <p><span>Region: </span>{{country.region}}</p>
+                <p><span>Capital: </span>{{country.capital}}</p>
+            </div>
         </div>
-    </div>
 </li>
-

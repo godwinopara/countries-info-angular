@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { CountriesDataService } from 'src/app/services/countries-data/countries-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-country',
@@ -7,11 +7,9 @@ import { CountriesDataService } from 'src/app/services/countries-data/countries-
   styleUrls: ['./country.component.css']
 })
 export class CountryComponent {
-  countriesData = this.CountriesDataService.getTestCountriesData()
   @Input() country?: any;
 
-  constructor(private CountriesDataService : CountriesDataService){
+  constructor(public router: Router){
+    
   }
-
-  ngOnInit(){}
 }

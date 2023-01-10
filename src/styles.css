@@ -21,3 +21,8 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
 }
+
+li,
+ul {
+  list-style: none;
+}
