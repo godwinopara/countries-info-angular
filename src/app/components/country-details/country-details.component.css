@@ -11,6 +11,17 @@ p {
   margin-bottom: 5px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 80px;
+  text-align: center;
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
 .country-details-container {
   max-width: 1100px;
   margin: auto;
@@ -19,6 +30,7 @@ p {
   justify-content: center;
   height: 80vh;
   font-size: 1.6rem;
+  padding: 20px;
 }
 
 .wrapper {
@@ -47,4 +59,37 @@ p {
 
 .borders {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    margin-top: 30px;
+  }
+  .country-details-container {
+    display: block;
+    padding: 20px;
+  }
+
+  .image-wrapper {
+    width: 100%;
+  }
+
+  .details-wrapper {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+  .wrapper {
+    display: block;
+  }
+
+  .details {
+    display: block;
+  }
+
+  .left {
+    margin: 0;
+    margin-bottom: 50px;
+  }
 }

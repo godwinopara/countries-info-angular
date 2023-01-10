@@ -1,0 +1,9 @@
+header {
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 0px;
+}
+.header {
+  max-width: 1100px;
+  margin: auto;
+}
