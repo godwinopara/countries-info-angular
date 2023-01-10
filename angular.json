@@ -91,6 +91,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/countries-info",
+            "netlifyToken": "k6x3WV4WwfyxJAJTa5oC8pDqMdRM5auGJqcLGKqOAhY",
+            "siteId": ""
+          }
         }
       }
     }
